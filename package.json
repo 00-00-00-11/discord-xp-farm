@@ -1,0 +1,14 @@
+{
+  "name": "discord-xp-farm",
+  "version": "1.0.0",
+  "description": "web scrapping for children",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vinicius bazanella",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^2.1.1"
+  }
+}
