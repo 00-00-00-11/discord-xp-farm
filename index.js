@@ -12,10 +12,10 @@ const interval = 5000 //tempo entre cada mensagem enviada, em ms.
   await page.goto('https://discordapp.com/channels/558087780018683916/695269352219344966');
 
   await page.focus('.inputDefault-_djjkz')
-  await page.keyboard.type('vinicius.bazanella1@gmail.com')
-  await page.keyboard.press('Tab')
   await page.keyboard.type(username)
-  await page.keyboard.press(password)
+  await page.keyboard.press('Tab')
+  await page.keyboard.type(password)
+  await page.keyboard.press('Enter')
 
   setInterval(async () => {
     await page.keyboard.type('teste automatico a cada 5s...')
