@@ -1,9 +1,9 @@
 const puppet = require('puppeteer');
 
-const username = 'YOUR USERNAME HERE'
-const password = 'YOUR PASSWORD HERE'
-const message = 'mensagem automatica...'
-const interval = 5000 //tempo entre cada mensagem enviada, em ms.
+const username = 'example@domain.com';
+const password = '******';
+const message = 'this is the message...';
+const interval = 5000;
 
 (async () => {
   const browser = await puppet.launch({headless: false});
@@ -18,8 +18,8 @@ const interval = 5000 //tempo entre cada mensagem enviada, em ms.
   await page.keyboard.press('Enter')
 
   setInterval(async () => {
-    await page.keyboard.type('teste automatico a cada 5s...')
-    await page.keyboard.press(message)
+    await page.keyboard.type(message)
+    await page.keyboard.press('Enter')
   }, interval)
 
 })();
